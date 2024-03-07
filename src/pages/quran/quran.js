@@ -3,7 +3,6 @@ const Quran = () => {
     const [surahs, setSurahs] = useState('')
     const [autoplay, setAutoplay] = useState(false)
     const [surahSrc, setSrc] = useState('https://download.quranicaudio.com/quran/mishaari_raashid_al_3afaasee/001.mp3')
-    // fetch(`https://api.alquran.cloud/v1/quran/ar.alafasy`).then((res) => res.json()).then((data) => console.log(data.data.surahs[0]))
     fetch(`https://raw.githubusercontent.com/penggguna/QuranJSON/master/quran.json`).then((res) => res.json()).then((data) => setSurahs(data))
 
     const hndlePlay = (src) => {
@@ -11,19 +10,7 @@ const Quran = () => {
         setAutoplay(true)
 
     }
-    const save = {
-        "name": "Al-Fatiha",
-        "name_translations": {
-            "ar": "الفاتحة",
-            "en": "The Opening",
-            "id": "Pembukaan"
-        },
-        "number_of_ayah": 7,
-        "number_of_surah": 1,
-        "place": "Mecca",
-        "recitation": "https://download.quranicaudio.com/quran/mishaari_raashid_al_3afaasee/001.mp3",
-        "type": "Makkiyah"
-    }
+
     return (
         <div>
             <h1 className=' text-[20px] py-4 text-center kufam-kufam'> &#10627; {' '} القرأن الكريم {' '}&#10628;</h1>
