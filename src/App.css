@@ -1,38 +1,56 @@
-.App {
-  text-align: center;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Noto+Naskh+Arabic:wght@400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cairo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kufam:ital,wght@1,400..900&display=swap');
+
+body {
+  direction: rtl;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.noto-naskh {
+  font-family: "Noto Naskh Arabic", serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.kufam-kufam {
+  font-family: "Kufam", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 900;
+  font-style: italic;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.cairo-cairo {
+  font-family: "Cairo", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings: "slnt" 0;
 }
 
-.App-link {
-  color: #61dafb;
+
+
+audio::-webkit-media-controls-panel {
+  background-color: #02404970
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+audio::-webkit-media-controls-mute-button {
+  background-color: #B1D4E0;
+  border-radius: 50%;
+}
+
+.quran-audio::-webkit-media-controls-panel {
+  background-color: #00bcd4;
+}
+
+.start {
+  position: absolute;
+  left: -5px;
+  top: 0;
+  clip-path: polygon(50% 20%, 50% 80%, 100% 50%);
+  display: block;
+  transition: 0.3s;
 }

@@ -1,23 +1,31 @@
-import logo from './logo.svg';
 import './App.css';
+import Home from './pages/home/Home';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Favorite from './pages/favorite/Favorite';
+import NavBar from './components/NavBar';
+import Quran from './pages/quran/quran';
+import EveningAzkar from './pages/EveningAzkar/EveningAzkar';
+import MorningAzkar from './pages/morningAzkar/MorningAzkar';
+import Tsabeh from './pages/Tsabeh/Tsabeh';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className=' bg-background text-white min-h-screen'>
+      <div className='container'>
+
+        <Router>
+          <NavBar />
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/favorite" element={<Favorite />} />
+            <Route path="/quran" element={<Quran />} />
+            <Route path="/eveningAzkar" element={<EveningAzkar />} />
+            <Route path="/morningAzkar" element={<MorningAzkar />} />
+            <Route path="/tsabeh" element={<Tsabeh />} />
+          </Routes>
+        </Router>
+
+      </div>
     </div>
   );
 }
