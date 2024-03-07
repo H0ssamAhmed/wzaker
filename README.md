@@ -13,11 +13,11 @@
 
 # Hosting
 
-## This app is hosted on vercel you can see live version her [Live](https://wzaker.vercel.app/")
+## This app is hosted on vercel you can see live version her [Live](https://wzaker.vercel.app)
 
 # APIs
 
-### This project uses a public APIs that provides dataQuran:
+### This project uses public APIs that provide data:
 
 ## [Azkar API](https://raw.githubusercontent.com/nawafalqari/azkar-api/56df51279ab6eb86dc2f6202c7de26c8948331c1/azkar.json) for (Morning and Evening)
 
