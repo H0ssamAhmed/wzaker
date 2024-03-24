@@ -7,6 +7,7 @@ import Quran from './pages/quran/quran';
 import EveningAzkar from './pages/EveningAzkar/EveningAzkar';
 import MorningAzkar from './pages/morningAzkar/MorningAzkar';
 import Tsabeh from './pages/Tsabeh/Tsabeh';
+import { Analytics } from "@vercel/analytics/react"
 
 function App() {
   return (
@@ -24,7 +25,7 @@ function App() {
             <Route path="/tsabeh" element={<Tsabeh />} />
           </Routes>
         </Router>
-
+        <Analytics />
       </div>
     </div>
   );
