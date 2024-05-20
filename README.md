@@ -6,6 +6,7 @@
 
 - Tasabeh
 - The Holy Quran (Audio)
+- The Audio works while moving through all pages
 - Random Ayah with (Audio)
 - Add Ayah to Favorite with (Audio)
 - Show Surah'name of Ayah It's all details
